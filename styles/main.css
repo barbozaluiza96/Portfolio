@@ -1,0 +1,231 @@
+/* reset css: all padding and margin reset to 0 */
+* 
+{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body 
+{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+
+    
+    color: #000000;
+    font-size: 100%; /* 16px = 100% = 1em */
+    
+    background-image: url(../images/45degreee_fabric.webp);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "REM", sans-serif;
+    font-weight:bolder;
+    color: #1a23e8;
+}
+
+h1{
+    font-size: 2.25em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 2.125em;
+    margin-bottom: 8px;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    margin-bottom: 8px;
+}
+
+li img
+{
+    height: 20px;
+    padding-right: 30px;
+}
+
+.container
+{
+    min-height: 900px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-content:start;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#space
+{
+    padding-right: 30dvw;
+    display: flex;
+    flex-grow: 1;          
+    text-align: center;    
+}
+
+li
+{
+    margin-left: 10px;
+    min-width: 50px;
+    align-content: center;
+}
+
+ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+#grid 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;            
+}
+  
+#grid-item 
+{
+    background-color: #ffffff;       
+    width: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+a:visited
+{
+    color: #000000;
+}
+
+#current-page
+{
+    color: #1a23e8;
+}
+
+a:link
+{
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a:active
+{
+    border-radius: 25px;
+    background-color:rgb(188, 188, 188);
+}
+
+
+main
+{
+    padding-top: 50px;
+    flex: 1 0 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main#contact-page
+{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main#contact-page img
+{
+    width: 32px;
+    height: 32px;
+}
+
+aside
+{
+    padding-top: 70px;
+    flex: 1 0 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+img
+{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+aside img
+{
+    width:300px;
+    height: 400px;
+}
+
+footer
+{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+header
+{
+    height: 100px;
+    align-content: center;
+    font-size: larger;
+
+    width: 100%;
+    margin-bottom: 5px;
+    box-shadow: 0px 7px 3px -3px rgba(0,0,0,0.25);
+}
+
+/* tablet: if viewport or screen is 800px or less...*/
+@media screen and (max-width: 800px)
+{
+    #space
+    {
+        padding-right: 10dvw;
+        display: flex;
+        flex-grow: 1;          
+        text-align: center;    
+    }
+
+    a:link{
+       
+        padding: 10px 20px;
+      
+    }
+
+    main{
+        flex: 1 0 60%;
+    }
+
+    aside{
+        flex: 1 0 40%;
+    }
+
+}
+
